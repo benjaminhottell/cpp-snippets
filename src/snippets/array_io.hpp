@@ -1,4 +1,5 @@
-#pragma once
+#ifndef INCLUDED_PRINT_ARRAY_HPP
+#define INCLUDED_PRINT_ARRAY_HPP
 
 /*
 Print a one-dimensional iterable data structure (e.g. a std::vector<int>) to
@@ -26,7 +27,7 @@ inline void print_array(
 		out << ',' << *it;
 	}
 
-	out << "]\n";
+	out << ']';
 
 }
 
@@ -37,3 +38,4 @@ inline void print_array(
 	print_array(iterable.begin(), iterable.end(), out);
 }
 
+#endif

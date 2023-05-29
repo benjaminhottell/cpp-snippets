@@ -5,6 +5,7 @@ project(cpp-snippets)
 
 set(LibraryName "cpp-snippets")
 set(TestRunnerName "cpp-snippets-tests")
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(doctest REQUIRED)
 
@@ -18,6 +19,7 @@ add_library(${LibraryName} INTERFACE)
 target_sources(${LibraryName} INTERFACE ${LibrarySources})
 
 target_include_directories(${LibraryName} INTERFACE ./src)
+
 
 # set up tests
 

@@ -13,7 +13,7 @@ build $(TEST_EXE):
 	cmake -S . -B $(BUILD_DIR)
 	cmake --build $(BUILD_DIR)
 
-run: $(TEST_EXE)
+run: build
 	$(TEST_EXE)
 
 test: run
