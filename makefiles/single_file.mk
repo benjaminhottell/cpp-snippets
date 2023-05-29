@@ -5,8 +5,11 @@
 FILE_NAME=solution
 SOURCE_NAME=$(FILE_NAME).cpp
 
+CXX=g++
+CXXFLAGS=-Wall -g
+
 $(FILE_NAME): $(SOURCE_NAME)
-	$(CXX) -o "$@" "$^"
+	$(CXX) $(CXXFLAGS) -o "$@" "$^"
 
 run: $(FILE_NAME)
 	./$(FILE_NAME)
