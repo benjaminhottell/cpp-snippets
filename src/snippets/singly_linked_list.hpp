@@ -1,5 +1,5 @@
-#ifndef INCLUDED_PRINT_ARRAY_HPP
-#define INCLUDED_PRINT_ARRAY_HPP
+#ifndef INCLUDED_SINGLY_LINKED_LIST_HPP
+#define INCLUDED_SINGLY_LINKED_LIST_HPP
 
 /*
 Code for working with C-like singly linked lists.
